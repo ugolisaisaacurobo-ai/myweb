@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ugolisa's Student Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Ugolisa's Web Technologies Page</h1>
+    <p>Ugolisa Isaac Urobo &mdash; Student ID: 202512447</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning-plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs (learn web dev)</a>
+  </nav>
+
+  <main>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <!-- Paragraph about me -->
+      <p>
+        My name is Ugolisa and I am a student at Mulungushi University in the School of
+        Engineering and Technology, studying Information Technology.
+        I am currently taking ICT251 Web Technologies, where I am learning how to build
+        websites using HTML, CSS and eventually JavaScript. Outside of my studies I have
+        an interest in data work and building small AI-powered tools, and I am excited
+        to combine what I learn in this course with those interests to build my own
+        web-based projects in the future.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Basketball</li>
+        <li>Gaming</li>
+        <li>Coding</li>
+      </ul>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <p>Steps I will take to improve my web development skills:</p>
+      <ol>
+        <li>Practice building small HTML and CSS pages every week.</li>
+        <li>Learn JavaScript fundamentals through free online tutorials.</li>
+        <li>Build and deploy a personal portfolio site on GitHub Pages.</li>
+      </ol>
+
+      <table>
+        <caption>Weekly Web Learning Plan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Practice Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML structure</td>
+            <td>Rebuild this page's layout from scratch</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS styling</td>
+            <td>Try a new color palette and font pairing</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>JavaScript basics</td>
+            <td>Make the nav links highlight on click</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photo Gallery</h2>
+      <!-- images inside images/ -->
+      <div class="gallery">
+        <figure>
+          <img src="images/photo1.jpg" alt="Selfie of a genuine happy smile">
+          <figcaption>Selfie of a genuine happy smile.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="Enjoying a sunny day outdoors">
+          <figcaption>Enjoying a sunny day outdoors.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="A scenic view of a man in deep thought">
+          <figcaption>A scenic view of a man in deep thought.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Introduction Video</h3>
+      <!-- Recorded video -->
+      <video controls>
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Video summary: In this short video I introduce myself, say my name and
+        programme, and mention one web skill I hope to learn this semester.
+      </p>
+
+      <h3>Audio Clip</h3>
+      <!-- Recorded audio -->
+      <audio controls>
+        <source src="videos/voice.m4a" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <p>
+        Random brief
+      </p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>This form is a browser demonstration only. It does not send any data.</p>
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic">
+            <option value="general">General enquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="collaboration">Collaboration</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ugolisa &mdash; ICT251 Web Technologies, Mulungushi University</p>
+  </footer>
+
+</body>
+</html>
