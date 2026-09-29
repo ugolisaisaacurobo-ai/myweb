@@ -1,0 +1,212 @@
+/* ===== Base / element selectors ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f7f9fb;
+  margin: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #14315c;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.25rem 0;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: #1e4a8a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f1b400;
+  color: #14315c;
+  outline: none;
+}
+
+/* ===== Main content sections (class selector, reused) ===== */
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.content-section {
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+  border: 1px solid #ccd6e0;
+  border-radius: 6px;
+}
+
+.content-section h2 {
+  color: #14315c;
+  border-bottom: 2px solid #f1b400;
+  padding-bottom: 0.4rem;
+}
+
+/* ===== Unique section (id selector) ===== */
+#about {
+  background-color: #f1f6fa;
+}
+
+/* ===== Photo gallery ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery figure {
+  margin: 0;
+  width: 220px;
+  text-align: center;
+}
+
+.gallery img {
+  border: 2px solid #ccd6e0;
+  border-radius: 4px;
+}
+
+.gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #ccd6e0;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th {
+  background-color: #14315c;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f6fa;
+}
+
+/* ===== Media ===== */
+#media video,
+#media audio {
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* ===== Form ===== */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #aab7c4;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #1e4a8a;
+  border-color: #1e4a8a;
+}
+
+button {
+  background-color: #1e4a8a;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #f1b400;
+  color: #14315c;
+  outline: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #14315c;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive: narrow screens ===== */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery figure {
+    width: 100%;
+    max-width: 280px;
+  }
+}
